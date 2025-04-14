@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Level Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Water Monitoring System</h1>
+    <p>Current Water Level:</p>
+    <div id="waterLevel">Loading...</div>
+
+    <div class="water-container">
+        <div id="waterFill" class="water-fill"></div>
+    </div>
+
+    <h2>Water Level History</h2>
+    <canvas id="waterChart"></canvas>
+
+    <h2>Water Consumption</h2>
+    <p id="consumptionMessage">Loading...</p>
+
+    <script>
+        var thingspeakApiUrl = "{{ thingSpeakUrl }}";
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
