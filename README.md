@@ -1,4 +1,4 @@
-# IoT-Based Smart Water Management: Water Level & Consumption Monitoring for Homes
+# Smart IoT Solution for Home Water Tracking and Optimization
 
 This project implements a smart water management system for homes, enabling real-time water level and consumption monitoring using IoT technologies. The solution leverages sensors and cloud connectivity to track water usage and storage, providing actionable insights for efficient water management.
 
